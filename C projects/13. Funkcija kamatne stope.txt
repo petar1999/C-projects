@@ -1,0 +1,35 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+float kamata(float a)
+{
+	float b;
+	a = 1 / a;
+	b = pow(2,a) - 1;
+	b = b * 100;
+	return b;
+
+
+}
+
+
+int main()
+{
+	float mjesec;
+	cout << "upisi mjesec" << endl;
+	cin >> mjesec;
+	if (mjesec > 0 && mjesec < 13) 
+	{
+		
+        cout<<"da uduplas ulozeno treba biti kamata "<< kamata(mjesec)<<"%"<<endl;
+
+    }
+
+	else 
+	{
+		cout << "krivo si unio mjesec"<<endl;
+	}
+
+
+}
